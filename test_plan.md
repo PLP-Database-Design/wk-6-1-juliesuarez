@@ -3,19 +3,19 @@
 * **Document Version:** 1.0
 * **Date:** November 1, 2025
 * **Author:** Juliet Nakawesi
-* **Approval:** (Pending review by team)
+* **Approval:** Approved by team on November 2,2025
 
 **1. Introduction**
 
 **Project Objective**
 
-The primary objective  is to conduct Quality Assurance testing on the "BookStore" React web application. We will follow the three-phase project schedule to ensure the application's key functionalities such as browsing, searching, and purchasing books are functional, reliable, and user-friendly. 
+The primary objective  is to conduct Quality Assurance testing on the "BookStore" React web application. We will follow the three-phase project schedule to ensure the application's key functionalities such as browsing, searching, and purchasing books are functional, reliable, and user-friendly.
 
 #### Application Under Test (AUT)
 
 * **Application Name:** BookStore
 * **Platform:** Web (React)
-* **Test Environment URL:** [http://192.168.100.11:3000](http://192.168.100.11:3000)
+* **Test Environment URL:** [https://wk-6-1-juliesuarez-69o7cwtq7-juliets-projects-76689efa.vercel.app/catalog](https://wk-6-1-juliesuarez-69o7cwtq7-juliets-projects-76689efa.vercel.app/catalog)
 * **Browser**: Chrome,latest Version
 
 ### Resources Used
@@ -48,7 +48,6 @@ Google meet for daily discussions for 1 hour
    * Execute all test cases and log defects on github issues (Phase 2 & 3).
    * Capture evidence (screenshots, videos) for test execution (Phase 3).
 
-
 ### Project Schedule & Milestones
 
 This schedule outlines the key activities and responsibilities for each phase, ensuring we meet our deadlines.
@@ -65,27 +64,34 @@ This schedule outlines the key activities and responsibilities for each phase, e
 **Phase 1: Planning & Setup (Nov 1 - Nov 5)**
 
 * **Saturday, Nov 1 (Day 1):**
+
   * **Task:** Project Kick-off & Initial Test Plan Draft
   * **Owner:** Juliet
 * **Sunday, Nov 2 (Day 2):**
+
   * **Task:** Team review and refinement of Test Plan.
   * **Owner:** All
   * **Task:** Setup all tools: Jira board, Google Sheets (TC & Risk tabs), GitHub Issues.
   * **Owner:** Juliet
 * **Monday, Nov 3 (Day 3):**
+
   * **Task:** Begin detailed Risk Analysis and populate the Risk Register.
   * **Owner:** Donie
   * **Task:** Begin drafting high-priority test cases (Search & Cart) based on the test plan.
   * **Owner:** Maureen
 * **Tuesday, Nov 4 (Day 4):**
+
   * **Task:** Finalize Risk Register (v1.0) with initial analysis.
   * **Owner:** Donie
   * **Task:** Finalize Test Plan (v1.0) for submission.
   * **Owner:** Juliet
-* **Wednesday, Nov 5 (Day 5):**
-  * **DEADLINE:** Submit all Phase 1 Deliverables.
+  * **Task:** Finalize with the test cases registration
+  * **Owner**: Moreen
   * **Task:** Review and approve all Phase 1 work.
   * **Owner:** Juliet and All
+* **Wednesday, Nov 5 (Day 5):**
+
+  * **DEADLINE:** Submit all Phase 1 Deliverables.
 
 ---
 
@@ -99,7 +105,7 @@ This schedule outlines the key activities and responsibilities for each phase, e
 * **Friday, Nov 7 (Day 7):**
   * **Task:** Begin "Early Execution" of high-priority tests (Shopping Cart & Purchase Flow).
   * **Owner:** Maureen
-  * **Task:** Log any initial defects found on GitHub Issues.
+  * **Task:** Log all defects found on GitHub Issues.
   * **Owner:** Maureen
 * **Saturday, Nov 8 (Day 8):**
   * **Task:** Continue test execution (Homepage & Search functionality).
@@ -123,16 +129,15 @@ This schedule outlines the key activities and responsibilities for each phase, e
   * **Task:** Complete test execution for all remaining tests.
   * **Owner:** Maureen
 * **Thursday, Nov 13 (Day 13):**
-  * **Task:** Retest any "Fixed" bugs (if applicable).
   * **Task:** Capture all final screenshots and video evidence.
   * **Owner:** Maureen
 * **Friday, Nov 14 (Day 14):**
   * **Task:** Create Final Test Report & Defect Analysis (with graphs).
-  * **Owner:** Juliet
+  * **Owner:** Juliet and all
   * **Task:** Generate final risk metrics and analysis.
   * **Owner:** Donie
 * **Saturday, Nov 15 (Day 15):**
-  * **Task:** Record Video Presentation and compile final documentation.
+  * **Task:** Record Video Presentation and compile final documentation with Zoom.
   * **Owner:** All
 * **Sunday, Nov 16 (Day 16):**
   * **Task:** Final team review of all deliverables.
@@ -171,14 +176,9 @@ To be realistic with our timeline, the following will not be tested:
 * Backend database integrity.
 * Security/penetration testing (unless a major flaw is found, e.g., SQL injection in search).
 
-
-##### Phase 1: Planning & Setup (Due: Nov 5, 2025)
-
-This section outlines our tasks to complete Phase 1.
-
 #### 4.1 Test Approach
 
-We will use a **manual and static testing** approach focused on **functional** and **usability** testing. We will prioritize test cases based on critical user flows.
+We will use a **manual and dynamic testing** approach focused on **functional** and **usability** testing. We will prioritize test cases based on critical user flows.
 
 #### Project Board & Tools
 
@@ -195,14 +195,20 @@ We will use a **manual and static testing** approach focused on **functional** a
 3. **Test Case Management:** We will use **Google Sheets** to write and track our test cases.
    * **Action (Test Manager):** Create a Google Sheet with tabs for "Test Cases" and "Risk Register."
 
-
-#### Risk Analysis
+#### Risk Analysis Register
 
 **Action (Donie Golanda):** By Nov 4, please populate the "Risk Register" tab in our Google Sheet.
 
+
 Submit the excel link here plus analysis of the risks, this could be a pie-chart or histogram or bar graph.
 
-#### Defect logging
+#### Definition of test cases
+
+**Action (Maureen Muriithi):** By Nov 4, Submit the test cases sheet here
+
+#### **Defect logging**
+
+**Action (Maureen Muriithi):** By Nov 4, create githubs issues .
 
 Provide links to the issues on github here
 
