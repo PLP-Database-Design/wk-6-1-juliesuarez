@@ -199,10 +199,9 @@ We will use a **manual and dynamic testing** approach focused on **functional** 
 
 **Action (Donie Golanda):** By Nov 4, please populate the "Risk Register" tab in our Google Sheet.
 
-
 Submit the excel link here plus analysis of the risks, this could be a pie-chart or histogram or bar graph.
 --Our risk check includes continuous reviews of the Bookstore app, flagging customer or provider side risks, and creating a corresponding risk matrix:
-Part 1: Excel link tracker as of 04.11.2025 : https://docs.google.com/spreadsheets/d/1tD9UsES4EpEndAaiTSLDPWYG6Ygy2hYa0wXrpsyGkaE/edit?gid=1847342276#gid=1847342276 
+Part 1: Excel link tracker as of 04.11.2025 : https://docs.google.com/spreadsheets/d/1tD9UsES4EpEndAaiTSLDPWYG6Ygy2hYa0wXrpsyGkaE/edit?gid=1847342276#gid=1847342276
 
 Part 2: The visual analysis of the risks as of 04.11.2025 via pie-chart:(https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/blob/main/Bookstore_Riskcoverage.jpg)
 
@@ -215,6 +214,10 @@ Part 2: The visual analysis of the risks as of 04.11.2025 via pie-chart:(https:/
 **Action (Maureen Muriithi):** By Nov 4, create githubs issues .
 
 Provide links to the issues on github here
+
+[BG-002 - https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/2]()
+
+BG-001-  [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/1]()
 
 #### General team Reflection
 
