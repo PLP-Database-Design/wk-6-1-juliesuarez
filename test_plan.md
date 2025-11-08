@@ -176,9 +176,37 @@ To be realistic with our timeline, the following will not be tested:
 * Backend database integrity.
 * Security/penetration testing (unless a major flaw is found, e.g., SQL injection in search).
 
+
+### Test Entry & Exit Criteria
+
+This section defines the specific conditions that must be met to **start** (Entry Criteria) and **stop** (Exit Criteria) the formal testing phases.
+
+#### Entry Criteria (Conditions to Start Phase 2)
+
+Before formal test design and execution (Phase 2) can begin, the following conditions must be met:
+
+* **Test Plan:** This Test Plan document (v1.0) is reviewed and approved by all team members.
+* **Environment:** The "BookStore" application is deployed to the test environment URL, and the link is accessible and stable.
+* **Tools:** All project management and reporting tools (Jira, Google Sheets, GitHub Issues) are set up, configured, and accessible to the team.
+* **Test Cases:** All high-priority test cases (as defined in the plan) are written, reviewed, and ready for execution.
+* **Risk Analysis:** The initial Risk Register (v1.0) has been completed and reviewed by the team.
+
+#### Exit Criteria (Conditions to Complete Project - Phase 3)
+
+To consider the project testing complete and ready for final submission (end of Phase 3), the following conditions must be met:
+
+* **Test Execution:** 100% of all planned test cases in the test suite have been executed (i.e., marked as "Pass," "Fail," ).
+* **Defect Status:**
+  * All defects are added to the github issues
+* **Documentation:** All test execution evidence (screenshots, videos) is captured and attached to the corresponding test cases or defect logs (GitHub Issues).
+* **Final Deliverables:**
+  * The Final Test Report (with analysis and graphs) is complete and reviewed.
+  * The Final Risk Report (with metrics) is complete.
+  * The final video presentation is recorded and ready for submission.
+
 #### 4.1 Test Approach
 
-We will use a **manual and dynamic testing** approach focused on **functional** and **usability** testing. We will prioritize test cases based on critical user flows.
+We will use a **manual,dynamic  testing and automated testing with Sonar** approach focused on **functional** and **usability** testing. We will prioritize test cases based on critical user flows.
 
 #### Project Board & Tools
 
@@ -222,7 +250,7 @@ Implications for BookStore:
 
 --The results provide a baseline for maintaining code quality and identifying areas for improvement over time
 
-Based on the analysis, we found 20 Medium and 31 Low Risks: 
+Based on the analysis, we found 20 Medium and 31 Low Risks:
 --14 issues affecting software reliability
 --37 issues affecting software maintainability
 
@@ -232,7 +260,6 @@ Additionally, we found security findings:
 Full analysis results are available at the SonarCloud dashboard::: https://sonarcloud.io/summary/overall?id=superdon-777_wk-6-1-juliesuarez&branch=master
 
 The risk chart for the 23 files can be viewed at: https://sonarcloud.io/component_measures?id=superdon-777_wk-6-1-juliesuarez
-
 
 #### Definition of test cases
 
