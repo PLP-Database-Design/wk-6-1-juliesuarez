@@ -1,0 +1,7 @@
+organization=superdon-777
+projectKey=superdon-777_wk-6-1-juliesuarez
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.76401
+dashboardUrl=https://sonarcloud.io/dashboard?id=superdon-777_wk-6-1-juliesuarez
+ceTaskId=AZpkRqecTfjArgp0CeX7
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZpkRqecTfjArgp0CeX7

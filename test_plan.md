@@ -200,10 +200,39 @@ We will use a **manual and dynamic testing** approach focused on **functional** 
 **Action (Donie Golanda):** By Nov 4, please populate the "Risk Register" tab in our Google Sheet.
 
 Submit the excel link here plus analysis of the risks, this could be a pie-chart or histogram or bar graph.
---Our risk check includes continuous reviews of the Bookstore app, flagging customer or provider side risks, and creating a corresponding risk matrix:
-Part 1: Excel link tracker as of 04.11.2025 : https://docs.google.com/spreadsheets/d/1tD9UsES4EpEndAaiTSLDPWYG6Ygy2hYa0wXrpsyGkaE/edit?gid=1847342276#gid=1847342276
+--Our risk check includes continuous reviews of the Bookstore app, flagging customer or provider side risks, and creating a corresponding risk matrix. We have run Requirements Review, Design Documents Review and Static Analysis of the Code and identified several issues:
+Part 1: Excel link tracker as of 08.11.2025 : https://docs.google.com/spreadsheets/d/1tD9UsES4EpEndAaiTSLDPWYG6Ygy2hYa0wXrpsyGkaE/edit?gid=1847342276#gid=1847342276
 
-Part 2: The visual analysis of the risks as of 04.11.2025 via pie-chart:(https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/blob/main/Bookstore_Riskcoverage.jpg)
+Part 2: The visual analysis of the findings from Requirements and Design Document review as of 08.11.2025 via pie-chart:(https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/blob/main/Bookstore_Riskcoverage.jpg)
+
+Part 3: Static Analysis: SonarQube Scan Summary- BookStore Website
+--These scripts [PowerShell (.ps1) and sonar-project.properties] were created to automate SonarCloud scans for the Bookstore project. They help count total code files, measure lines of code and run quality checks (like bugs, code smells and security issues) in a simple, repeatable way without complex setup.
+
+How to use the scripts in VS Code (Powershell)?
+$Env:sonar_token= "3------------------------6" [Inquire for the token from the Risk Manager]
+echo $Env:SONAR_TOKEN
+.\run_sonarqube.ps1
+
+--We ran a code quality scan on the Bookstore project using SonarQube. Out of 26454 files, only 23 files were scanned due to filtering rules (most files are in node_modules or match ignored patterns). The scanned files included JavaScript, CSS, HTML and JSON files, covering core functionality. The total lines of code counted were 3,603,145.
+
+Implications for BookStore:
+--The scan confirms that the key functional files are free from obvious critical issues
+
+--Most files weren’t scanned, so additional analysis may be needed for full coverage (especially for new features or custom scripts)
+
+--The results provide a baseline for maintaining code quality and identifying areas for improvement over time
+
+Based on the analysis, we found 20 Medium and 31 Low Risks: 
+--14 issues affecting software reliability
+--37 issues affecting software maintainability
+
+Additionally, we found security findings:
+--2  security hotspots (based on weak cryptography)
+
+Full analysis results are available at the SonarCloud dashboard::: https://sonarcloud.io/summary/overall?id=superdon-777_wk-6-1-juliesuarez&branch=master
+
+The risk chart for the 23 files can be viewed at: https://sonarcloud.io/component_measures?id=superdon-777_wk-6-1-juliesuarez
+
 
 #### Definition of test cases
 
