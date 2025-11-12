@@ -8,5 +8,5 @@
 | BG-004 | SN-01        | Performance   | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/4](https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/4) | SonarQube      |
 | BG-005 | SN-02        | Compatibility | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/5](https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/5) | SonarQube      |
 | BG-006 | SN-03        | Validation    | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/6](https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/6) | SonarQube      |
-| BG-007  |TC-038       | Functional     | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/7]  |Chrome browser   |
+| BG-007  |TC-038       | Functional     | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/7]  | Edge   |
 | BG-008  | TC-039      | Functional     | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/8]   | Edge           |
