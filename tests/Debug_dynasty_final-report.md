@@ -16,19 +16,17 @@ Submission date: to be added
 
 ## What We Reviewed
 
-
 | Review Type          | Description                                                                                                                                                                                                                                                                                           | Reviewed by          |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
-| Documentation Review | Review of`functional-requirements.md` for clarity, completeness, and consistency                                                                                                                                                                                                                      | All the team members |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| Documentation Review | Review of `functional-requirements.md` for clarity, completeness, and consistency                                                                                                                                                                                                                   | All the team members |
 | SonarQube Analysis   | Static analysis of book store project and associated code using SonarQube.                                                                                                                                                                                                                            | Julie and Donie      |
 | Dynamic Analysis     | Execution of the application to identify defects                                                                                                                                                                                                                                                      | All the team members |
 | Risk Analysis        | What BookStore should do? How will BookStore perform the functions it's supposed to do?<br />How is the BookStore's code quality likely to create issues going forward? [NB: recurring risks (repeated defects) are only listed once]<br />visit risks.md file and risks_reports folder for details. | Donie Golanda        |
 
 ## Issues Identified
 
-
 | Name                 | Issues Identified                                                                                                                                                                                                                                                                                                                                             | Identified by                              |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | Documentation Review | The document fully embraces the "design for testability" principle. It's clear and unambiguous.                                                                                                                                                                                                                                                              | All team members                           |
 | SonarQube            | The tool indentified issues in the code such as syntax error ,security, maintainability and validation errors. Navigate to sonar_report.md for details                                                                                                                                                                                                        | Julie and Donie                            |
 | Best Practices       | For any application that invloves payments, There should be a support page or button where users can check for guidance, the books should be able clickable such that a user can have more details about the book before attempting to buy,<br />Visit the test-cases.md file ,click on the link for details, checkout the test cases with a field suggeDonie | Donie and verified by the rest of the team |
@@ -58,9 +56,8 @@ The analysis uncovered **44 specific problems** that prove the system is not rea
 
 The risks hit every part of the business model and are grouped by impact:
 
-
-| **Priority Level** | **Primary Business Impact**                                                                                                                                                                                                                                                                                          | **Key Risks Involved**                                                                                                |
-| :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------- |
+| **Priority Level** | **Primary Business Impact**                                                                                                                                                                                                                                                                                    | **Key Risks Involved**                                                                                          |
+| :----------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
 | **Critical**       | BookStore faces a complete Launch Failure and Legal Liability. It also risks shutting down entirely because of a missing Admin Access features (R-1). You may also face major security breaches (R-20). Worst of all, sales could be completely blocked (R-27) or orders could be lost without anyone knowing (R-25) | Admin Access (R-1), Data Security (R-20), Buy Button Crash (R-27), Silent Errors (R-25), Cross-Browser Failure (R-19) |
 | **High**           | The business is facing Revenue Loss and Customer Abandonment. Missing essential features will result in lower engagement, more abandoned shopping carts and lower customer retention. Additionally, site crashes on important pages (R-28, R-29) stop the book listings from even appearing                          | Stock Limits (R-3), User Accounts (R-6), Dynamic Shipping (R-10), Site Performance (R-21), List Crash (R-282, R-29)   |
 | **Medium/Low**     | This category results in Inefficiency and Damage to Professionalism. It causes more support requests, a drop in customer trust (R-17 Order History), and risks wasting developer time on complex code fixes (R-40). You also face potential legal risk due to poor accessibility (R-30)                              | Accessibility (R-30), Order History (R-17), Code Complexity (R-40), Inconsistent Errors (R-44)                        |
@@ -121,11 +118,45 @@ The system is **definitively not ready for launch**. Investing a focused, priori
 
 Add your reflection here
 
+### Traceability Matrix
+
+
+| **Requirement ID**        | **Requirement Description**                              | **Mapped Test Case(s)**                       | **Coverage Status**                          |
+| ------------------------------- | -------------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------- |
+| **Catalog (Search)**      | Search by title, author, description; handle ESC               | TC-003, TC-004, TC-007, TC-013, TC-034              | **Covered**                                  |
+| **Catalog (Filter/Sort)** | Filter by genre/price; Sort by price/title/pop                 | TC-020, TC-026                                      | No filter button (Not run)                         |
+| **Catalog (Details)**     | View book details, images, stock                               | TC-018, TC-022                                      | **Covered**(Not Run)                         |
+| **Catalog (General)**     | Display books on homepage/catalog                              | TC-005, TC-006                                      | **Covered**                                  |
+| **FR-O01**                | Cart Operations:Add, remove, update, stock limits, persistence | TC-001, TC-002, TC-008, TC-010, TC-014              | **Covered**                                  |
+| **FR-O02**                | Checkout Wizard:Navigation, validation, shipping fees          | TC-009, TC-011, TC-021                              | **Covered**                                  |
+| **FR-O03**                | Payments:Paystack currency, cents, success/error               | TC-023, TC-032 (Payment)                            | **Covered**                                  |
+| **FR-O04**                | Orders:View order history, CSV export                          | TC-028                                              | **Partially Covered**(CSV export not tested) |
+| **FR-O05**                | Order Lifecycle:Status updates (Pending -> Paid, etc.)         | TC-027                                              | **Covered**(Not Run)                         |
+| **Checkout (Coupons)**    | Apply valid/invalid coupons                                    | TC-019                                              | **Covered**(No field to add coupons)         |
+| **FR-R01**                | Returns:7-day window validation                                | TC-016 (Checks policy exists)                       | **Partially Covered**                        |
+| **FR-R02**                | Refunds:Simulate refunds, audit trail                          | *None*                                            | No refunds page                                    |
+| **FR-R03**                | Admin Approval:Admins must approve returns                     | *None*                                            | No approval page                                   |
+| **FR-U01**                | Reviews:Only purchasers, one per user, edit/delete             | TC-029                                              | **Covered**(Suggestion)                      |
+| **FR-U02**                | Moderation:Report/flag review, admin queue                     | *None*                                            | **Missing**                                  |
+| **FR-U03**                | Q&A:Safe markdown, sanitation                                  | *None*                                            | **Missing**                                  |
+| **Admin (General)**       | Admin console access and navigation                            | TC-012, TC-024, TC-036                              | Covered                                            |
+| **FR-M01**                | **Admin: Catalog CRUD**                                  | ***None*(TC-024 is only for confirmation)** | **Missing**                                  |
+| **FR-M02**                | **Admin: Inventory**                                     | ***None***                                  | **Missing**                                  |
+| **FR-M03**                | **Admin: Orders Dashboard**                              | ***None***                                  | **Missing**                                  |
+| **FR-M04**                | **Admin: Moderation**                                    | ***None***                                  | **Missing**                                  |
+| **FR-M05**                | **Admin: Promotions**                                    | *None*(TC-019 tests usage, not admin)             | **Missing**                                  |
+| **FR-N01 / N02**          | Notifications:Badge count, mark all read                       | *None*                                            | **Missing**                                  |
+| **FR-X01**                | **Accessibility (A11y)**                                 | TC-007, TC-025, TC-035                              | **Partially Covered**                        |
+| **FR-X02**                | **Performance**                                          | TC-032 (Load), TC-033                               | **Covered**                                  |
+| **FR-X03**                | **Compatibility**                                        | TC-030                                              | **Covered**                                  |
+| **FR-X04 / S01-S03**      | **Security & Sanitization**                              | TC-031                                              | **Partially Covered**                        |
+| **(Not Specified)**       | User Account Management                                        | TC-017                                              | **Requirement Missing**                      |
+| **(Not Specified)**       | Customer Support Access                                        | TC-015                                              | **Requirement Missing**                      |
+
 ### Reflection
 
-
 | Lessons                                                                                           | strategy                      | Challenges              | Migitation                                    |
-| --------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------- | ----------------------------------------------- |
+| ------------------------------------------------------------------------------------------------- | ----------------------------- | ----------------------- | --------------------------------------------- |
 | Collaborative makes increases productivity                                                        | Effecetive Communition        | Network and electricity | Worked and supported each other as a team     |
 | Working with task boards allowed us to clearly define our tasks and not to get lost along the way | Clear definition of the tasks | New to the tool         | Team work and the guidance from the tutorials |
 |                                                                                                   |                               |                         |                                               |
