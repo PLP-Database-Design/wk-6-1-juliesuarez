@@ -33,6 +33,11 @@ compatibility across different browsers and responsiveness.
 5. **Whatsapp**: for continous Communication
 6. **Sonarqube:** for security,scalability and performance
 
+### **Test Environment**
+
+* **Test Environment URL:** [https://wk-6-1-juliesuarez-69o7cwtq7-juliets-projects-76689efa.vercel.app/catalog](https://wk-6-1-juliesuarez-69o7cwtq7-juliets-projects-76689efa.vercel.app/catalog)
+* **Browser**: Chrome and Edge,latest Version
+
 ## What We Reviewed
 
 | Review Type          | Description                                                                                                                                                                                                                                                                                           | Reviewed by          |
@@ -224,3 +229,9 @@ This step enhanced the level of transparency as regards product quality and a cl
 * [ ] The team completed the creation of test cases with google sheets and started executed them.
 * [ ] The team also completed the creation risks in the risk register using google sheets
 * [ ] The team completed the excution of test cases and submitted the required files.
+
+## **Appedix**
+
+Jira: [https://julietnakawesi.atlassian.net/jira/software/projects/KAN/boards/1?atlOrigin=eyJpIjoiMDYwMDU5N2Q1YjJmNDQwMDkyZGY0MDFhMmE1NzAxODgiLCJwIjoiaiJ9]()
+
+Google sheets( Test cases and Risk design):[https://docs.google.com/spreadsheets/d/1tD9UsES4EpEndAaiTSLDPWYG6Ygy2hYa0wXrpsyGkaE/edit?gid=1847342276#gid=1847342276]()
