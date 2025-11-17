@@ -214,11 +214,11 @@ This step enhanced the level of transparency as regards product quality and a cl
 | Working with task boards allowed us to clearly define our tasks and not to get lost along the way | Clear definition of the tasks | New to the tool         | Team work and the guidance from the tutorials |
 |                                                                                                   |                               |                         |                                               |
 
-## Checklist in Phase 2
+## Checklist 
 
 * [ ] The team reviewed the  `functional-requirements.md` document for clarity and completeness.
 * [ ] The team led by Julie and Donie analyzed the code using SonarQube and documented at least 4 key issues.
 * [ ] The team led by Moreen filed at least 9 GitHub issues based on the findings.
-* [ ] The team completed the creation of test cases with google sheets and started executing them.
+* [ ] The team completed the creation of test cases with google sheets and started executed them.
 * [ ] The team also completed the creation risks in the risk register using google sheets
 * [ ] The team completed the excution of test cases and submitted the required files.
