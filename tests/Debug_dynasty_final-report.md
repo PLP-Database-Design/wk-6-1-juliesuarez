@@ -14,6 +14,25 @@ Cohort : July Cohort,2025
 
 Submission date: to be added
 
+Prepared by: Debug Dynasty
+
+Version: 1.0
+
+## **Executive Summary**
+
+This report presents the results of comprehensive testing conducted on the Book store web application version 1.0
+from October 30 to November 17, 2025. The testing focused on verying the major functionalitis of the web application, verifying payment process, ensuring performance and confirming
+compatibility across different browsers and responsiveness.
+
+## Testing Tools
+
+1. **Jira**: for task tracking
+2. **Github**: for collaboration and defect reporting
+3. **Github Issues**: for defect reporting
+4. **Google sheets**: for test case design and risk creation
+5. **Whatsapp**: for continous Communication
+6. **Sonarqube:** for security,scalability and performance
+
 ## What We Reviewed
 
 | Review Type          | Description                                                                                                                                                                                                                                                                                           | Reviewed by          |
@@ -32,7 +51,7 @@ Submission date: to be added
 | Best Practices       | For any application that invloves payments, There should be a support page or button where users can check for guidance, the books should be able clickable such that a user can have more details about the book before attempting to buy,<br />Visit the test-cases.md file ,click on the link for details, checkout the test cases with a field suggeDonie | Donie and verified by the rest of the team |
 | Dynamic Analysis     | A couple of issues were identified with the application, such as the search functionality in the header not working as expected, the interface displaying 4  books and you could order more than what is available. Visit the defect-log.md for details.                                                                                                     | All team members                           |
 
-## Overall Review by the team
+## **Key Findings**
 
 #### Risk Analyis( Donie Golanda)
 
@@ -126,6 +145,19 @@ Simultaneously, during the testing process, a number of significant problems wer
 
 This step enhanced the level of transparency as regards product quality and a clear roadmap of what is required to be refined prior to deployment. All in all, the testing process has seen the application to head in a stable, reliable, and user friendly product besides providing the development team with workable information to improve the system.
 
+### Defect Report
+
+| BUG ID | Test Case ID | Area          | GitHub Issue Link                                                                                                                     | Enviroment     | Severity |
+| ------ | ------------ | ------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------- |
+| BG-001 | TC-003       | Functional    | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/1](https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/1) | Chrome browser | High     |
+| BG-002 | TC-013       | functional    | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/2](https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/2) | Chrome browser | High     |
+| BG-003 | TC-014       | Functional    | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/3](https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/3) | Chrome browser | High     |
+| BG-004 | SN-01        | Performance   | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/4](https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/4) | SonarQube      | Medium   |
+| BG-005 | SN-02        | Compatibility | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/5](https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/5) | SonarQube      | medium   |
+| BG-006 | SN-03        | Validation    | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/6](https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/6) | SonarQube      | High     |
+| BG-007 | TC-038       | Functional    | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/7]                                                                  | Edge           | High     |
+| BG-008 | TC-039       | Functional    | [https://github.com/PLP-Database-Design/wk-6-1-juliesuarez/issues/8]                                                                  | Edge           | High     |
+
 ### Traceability Matrix
 
 | **Requirement ID** | **Requirement Description**                      | **Mapped Test Case(s)** | **Coverage Status** |
@@ -184,7 +216,7 @@ This step enhanced the level of transparency as regards product quality and a cl
 | Working with task boards allowed us to clearly define our tasks and not to get lost along the way | Clear definition of the tasks | New to the tool         | Team work and the guidance from the tutorials |
 |                                                                                                   |                               |                         |                                               |
 
-## Checklist 
+## Checklist
 
 * [ ] The team reviewed the  `functional-requirements.md` document for clarity and completeness.
 * [ ] The team led by Julie and Donie analyzed the code using SonarQube and documented at least 4 key issues.
