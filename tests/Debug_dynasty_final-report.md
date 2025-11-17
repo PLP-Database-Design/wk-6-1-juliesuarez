@@ -128,83 +128,53 @@ This step enhanced the level of transparency as regards product quality and a cl
 
 ### Traceability Matrix
 
-| **Requirement ID**        | **Requirement Description**                              | **Mapped Test Case(s)**                       | **Coverage Status**                          |
-| ------------------------------- | -------------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------- |
-|                                 |                                                                |                                                     |                                                    |
-| **RQ-001**                | Add item to cart                                               | TC-001                                              | ✔️ Covered                                       |
-| **RQ-002**                | Navigate to cart page                                          | TC-002                                              | ✔️ Covered                                       |
-| **RQ-003**                | Search returns specific valid result                           | TC-003                                              | ❌ Defect Found (BG-001)                           |
-| **RQ-004**                | Search returns “No results” for invalid keyword              | TC-004                                              | ✔️ Covered                                       |
-| **RQ-005**                | Book prices displayed correctly                                | TC-005                                              | ✔️ Covered                                       |
-| **RQ-006**                | Catalog should display books with title, author, price         | TC-006                                              | ✔️ Covered                                       |
-| **RQ-007**                | Search bar should clear with ESC                               | TC-007                                              | ❌ Defect Found (BUG-002)                          |
-| **RQ-008**                | Cart icon displays correct item count                          | TC-008                                              | ✔️ Covered                                       |
-| **RQ-009**                | Navigate to checkout page successfully                         | TC-009                                              | ✔️ Covered                                       |
-| **RQ-010**                | Cart should persist after refresh                              | TC-010                                              | ✔️ Covered                                       |
-| **RQ-011**                | Email validation during checkout                               | TC-011                                              | ❌ Defect Found (BUG-003)                          |
-| **RQ-012**                | Admin dashboard accessible and functional                      | TC-012                                              | ❌ Defect Found (BUG-004)                          |
-| **RQ-013**                | All search bars return consistent results                      | TC-013                                              | ❌ Defect Found (BUG-005)                          |
-| **RQ-014**                | Cannot checkout more items than stock                          | TC-014                                              | ❌ Defect Found (BUG-006)                          |
-| **RQ-015**                | Support page accessible everywhere                             | TC-015                                              | ⚠️ Suggestion                                    |
-| **RQ-016**                | Refund/Return policy accessible                                | TC-016                                              | ⚠️ Suggestion                                    |
-| **RQ-017**                | Account creation and management                                | TC-017                                              | ⚠️ Suggestion                                    |
-| **RQ-018**                | Book details page shows full information                       | TC-018                                              | ⚠️ Suggestion                                    |
-| **RQ-019**                | Coupon and discount system works                               | TC-019                                              | ⚠️ Suggestion                                    |
-| **RQ-020**                | Genre and price filters function correctly                     | TC-020                                              | ⚠️ Suggestion                                    |
-| **RQ-021**                | Dynamic shipping fee applied                                   | TC-021                                              | ❌ Defect Found (BUG-007)                          |
-| **RQ-022**                | Books must have unique images and full details                 | TC-022                                              | ⚠️ Suggestion                                    |
-| **RQ-023**                | Paystack must support local currency                           | TC-023                                              | ⚠️ Suggestion                                    |
-| **RQ-024**                | Confirmation before admin deletes/edits records                | TC-024                                              | ⚠️ Suggestion                                    |
-| **RQ-025**                | Screen reader accessibility                                    | TC-025                                              | ⚠️ Not Run                                       |
-| **RQ-026**                | Sorting by title/price/popularity                              | TC-026                                              | ⚠️ Suggestion                                    |
-| **RQ-027**                | Order status updates correctly                                 | TC-027                                              | ⚠️ Suggestion                                    |
-| **RQ-028**                | User can view order history                                    | TC-028                                              | ⚠️ Suggestion                                    |
-| **RQ-029**                | User can submit ratings and reviews                            | TC-029                                              | ⚠️ Suggestion                                    |
-| **RQ-030**                | Cross-browser compatibility                                    | TC-030                                              | ✔️ Covered                                       |
-| **RQ-031**                | User data security                                             | TC-031                                              | ⚠️ Suggestion                                    |
-| **RQ-032**                | Site handles high traffic loads                                | TC-032                                              | ⚠️ Suggestion                                    |
-| **RQ-033**                | Images load quickly on all devices                             | TC-033                                              | ✔️ Covered                                       |
-| **RQ-034**                | Search handles typos                                           | TC-034                                              | ✔️ Covered                                       |
-| **RQ-035**                | Search bar remains visible while scrolling                     | TC-035                                              | ✔️ Covered                                       |
-| **RQ-036**                | Admin dashboard links navigate correctly                       | TC-036                                              | ❌ Defect Found (BUG-008)                          |
-| **RQ-037**                | Paystack payment should process successfully                   | TC-037                                              | ❌ Defect Found (BUG-009)                          |
-| **RQ-038**                | User can request return within 7 days                          | TC-038                                              | ⚠️ Suggestion                                    |
-| **RQ-039**                | User cannot request return after expiration                    | TC-039                                              | ⚠️ Suggestion                                    |
-| **RQ-040**                | Admin can create a new book                                    | TC-040                                              | ❌ Defect Found (BUG-010)                          |
-| **RQ-041**                | Admin can update a book                                        | TC-041                                              | ❌ Defect Found (BUG-011)                          |
-| **RQ-042**                | Admin can delete a book                                        | TC-042                                              | ⚠️ Suggestion                                    |
-| **RQ-043**                | Admin form validation for missing fields                       | TC-043                                              | ⚠️ Suggestion                                    |
-|                                 |                                                                |                                                     |                                                    |
-|                                 |                                                                |                                                     |                                                    |
-| **Catalog (Search)**      | Search by title, author, description; handle ESC               | TC-003, TC-004, TC-007, TC-013, TC-034              | **Covered**                                  |
-| **Catalog (Filter/Sort)** | Filter by genre/price; Sort by price/title/pop                 | TC-020, TC-026                                      | No filter button (Not run)                         |
-| **Catalog (Details)**     | View book details, images, stock                               | TC-018, TC-022                                      | **Covered**(Not Run)                         |
-| **Catalog (General)**     | Display books on homepage/catalog                              | TC-005, TC-006                                      | **Covered**                                  |
-| **FR-O01**                | Cart Operations:Add, remove, update, stock limits, persistence | TC-001, TC-002, TC-008, TC-010, TC-014              | **Covered**                                  |
-| **FR-O02**                | Checkout Wizard:Navigation, validation, shipping fees          | TC-009, TC-011, TC-021                              | **Covered**                                  |
-| **FR-O03**                | Payments:Paystack currency, cents, success/error               | TC-023, TC-032 (Payment)                            | **Covered**                                  |
-| **FR-O04**                | Orders:View order history, CSV export                          | TC-028                                              | **Partially Covered**(CSV export not tested) |
-| **FR-O05**                | Order Lifecycle:Status updates (Pending -> Paid, etc.)         | TC-027                                              | **Covered**(Not Run)                         |
-| **Checkout (Coupons)**    | Apply valid/invalid coupons                                    | TC-019                                              | **Covered**(No field to add coupons)         |
-| **FR-R01**                | Returns:7-day window validation                                | TC-016 (Checks policy exists)                       | **Partially Covered**                        |
-| **FR-R02**                | Refunds:Simulate refunds, audit trail                          | *None*                                            | No refunds page                                    |
-| **FR-R03**                | Admin Approval:Admins must approve returns                     | *None*                                            | No approval page                                   |
-| **FR-U01**                | Reviews:Only purchasers, one per user, edit/delete             | TC-029                                              | **Covered**(Suggestion)                      |
-| **FR-U02**                | Moderation:Report/flag review, admin queue                     | *None*                                            | **Missing**                                  |
-| **FR-U03**                | Q&A:Safe markdown, sanitation                                  | *None*                                            | **Missing**                                  |
-| **Admin (General)**       | Admin console access and navigation                            | TC-012, TC-024, TC-036                              | Covered                                            |
-| **FR-M01**                | **Admin: Catalog CRUD**                                  | ***None*(TC-024 is only for confirmation)** | **Missing**                                  |
-| **FR-M02**                | **Admin: Inventory**                                     | ***None***                                  | **Missing**                                  |
-| **FR-M03**                | **Admin: Orders Dashboard**                              | ***None***                                  | **Missing**                                  |
-| **FR-M04**                | **Admin: Moderation**                                    | ***None***                                  | **Missing**                                  |
-| **FR-M05**                | **Admin: Promotions**                                    | *None*(TC-019 tests usage, not admin)             | **Missing**                                  |
-| **FR-N01 / N02**          | Notifications:Badge count, mark all read                       | *None*                                            | **Missing**                                  |
-| **FR-X01**                | **Accessibility (A11y)**                                 | TC-007, TC-025, TC-035                              | **Partially Covered**                        |
-| **FR-X02**                | **Performance**                                          | TC-032 (Load), TC-033                               | **Covered**                                  |
-| **FR-X03**                | **Compatibility**                                        | TC-030                                              | **Covered**                                  |
-| **FR-X04 / S01-S03**      | **Security & Sanitization**                              | TC-031                                              | **Partially Covered**                        |
-| **(Not Specified)**       | User Account Management                                        | TC-017                                              | **Requirement Missing**                      |
-| **(Not Specified)**       | Customer Support Access                                        | TC-015                                              | **Requirement Missing**                      |
+| **Requirement ID** | **Requirement Description**                      | **Mapped Test Case(s)** | **Coverage Status** |
+| ------------------------ | ------------------------------------------------------ | ----------------------------- | ------------------------- |
+|                          |                                                        |                               |                           |
+| **RQ-001**         | Add item to cart                                       | TC-001                        | ✔️ Covered              |
+| **RQ-002**         | Navigate to cart page                                  | TC-002                        | ✔️ Covered              |
+| **RQ-003**         | Search returns specific valid result                   | TC-003                        | ❌ Defect Found (BG-001)  |
+| **RQ-004**         | Search returns “No results” for invalid keyword      | TC-004                        | ✔️ Covered              |
+| **RQ-005**         | Book prices displayed correctly                        | TC-005                        | ✔️ Covered              |
+| **RQ-006**         | Catalog should display books with title, author, price | TC-006                        | ✔️ Covered              |
+| **RQ-007**         | Search bar should clear with ESC                       | TC-007                        | ❌ Defect Found (BUG-002) |
+| **RQ-008**         | Cart icon displays correct item count                  | TC-008                        | ✔️ Covered              |
+| **RQ-009**         | Navigate to checkout page successfully                 | TC-009                        | ✔️ Covered              |
+| **RQ-010**         | Cart should persist after refresh                      | TC-010                        | ✔️ Covered              |
+| **RQ-011**         | Email validation during checkout                       | TC-011                        | ❌ Defect Found (BUG-003) |
+| **RQ-012**         | Admin dashboard accessible and functional              | TC-012                        | ❌ Defect Found (BUG-004) |
+| **RQ-013**         | All search bars return consistent results              | TC-013                        | ❌ Defect Found (BUG-005) |
+| **RQ-014**         | Cannot checkout more items than stock                  | TC-014                        | ❌ Defect Found (BUG-006) |
+| **RQ-015**         | Support page accessible everywhere                     | TC-015                        | ⚠️ Suggestion           |
+| **RQ-016**         | Refund/Return policy accessible                        | TC-016                        | ⚠️ Suggestion           |
+| **RQ-017**         | Account creation and management                        | TC-017                        | ⚠️ Suggestion           |
+| **RQ-018**         | Book details page shows full information               | TC-018                        | ⚠️ Suggestion           |
+| **RQ-019**         | Coupon and discount system works                       | TC-019                        | ⚠️ Suggestion           |
+| **RQ-020**         | Genre and price filters function correctly             | TC-020                        | ⚠️ Suggestion           |
+| **RQ-021**         | Dynamic shipping fee applied                           | TC-021                        | ❌ Defect Found (BUG-007) |
+| **RQ-022**         | Books must have unique images and full details         | TC-022                        | ⚠️ Suggestion           |
+| **RQ-023**         | Paystack must support local currency                   | TC-023                        | ⚠️ Suggestion           |
+| **RQ-024**         | Confirmation before admin deletes/edits records        | TC-024                        | ⚠️ Suggestion           |
+| **RQ-025**         | Screen reader accessibility                            | TC-025                        | ⚠️ Not Run              |
+| **RQ-026**         | Sorting by title/price/popularity                      | TC-026                        | ⚠️ Suggestion           |
+| **RQ-027**         | Order status updates correctly                         | TC-027                        | ⚠️ Suggestion           |
+| **RQ-028**         | User can view order history                            | TC-028                        | ⚠️ Suggestion           |
+| **RQ-029**         | User can submit ratings and reviews                    | TC-029                        | ⚠️ Suggestion           |
+| **RQ-030**         | Cross-browser compatibility                            | TC-030                        | ✔️ Covered              |
+| **RQ-031**         | User data security                                     | TC-031                        | ⚠️ Suggestion           |
+| **RQ-032**         | Site handles high traffic loads                        | TC-032                        | ⚠️ Suggestion           |
+| **RQ-033**         | Images load quickly on all devices                     | TC-033                        | ✔️ Covered              |
+| **RQ-034**         | Search handles typos                                   | TC-034                        | ✔️ Covered              |
+| **RQ-035**         | Search bar remains visible while scrolling             | TC-035                        | ✔️ Covered              |
+| **RQ-036**         | Admin dashboard links navigate correctly               | TC-036                        | ❌ Defect Found (BUG-008) |
+| **RQ-037**         | Paystack payment should process successfully           | TC-037                        | ❌ Defect Found (BUG-009) |
+| **RQ-038**         | User can request return within 7 days                  | TC-038                        | ⚠️ Suggestion           |
+| **RQ-039**         | User cannot request return after expiration            | TC-039                        | ⚠️ Suggestion           |
+| **RQ-040**         | Admin can create a new book                            | TC-040                        | ❌ Defect Found (BUG-010) |
+| **RQ-041**         | Admin can update a book                                | TC-041                        | ❌ Defect Found (BUG-011) |
+| **RQ-042**         | Admin can delete a book                                | TC-042                        | ⚠️ Suggestion           |
+| **RQ-043**         | Admin form validation for missing fields               | TC-043                        | ⚠️ Suggestion           |
+|                          |                                                        |                               |                           |
 
 ### Reflection
 
